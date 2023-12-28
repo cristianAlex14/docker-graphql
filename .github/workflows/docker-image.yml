@@ -28,8 +28,7 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t christianalexis/docker-graphql:0.0.2 .
-        docker push christianalexis/docker-graphql:latest .
-
+        docker build -t christianalexis/docker-graphql:latest .
     - name: Push Docker image
       run: |
         docker push christianalexis/docker-graphql:0.0.2
